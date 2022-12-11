@@ -5,36 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/fraunces" rel="stylesheet">
+              
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <nav>
+    <img src="./images/logo.svg" alt="sunnyside logo" class="logo">
+    <button aria-label="menu" class="menu-button"><img src="./images/icon-hamburger.svg" alt="hamburger menu icon" class="menu-icon"></button>
+    <ul class="hamburger-menu">
+      <li class="hamburger-menu-element"><a href="#" class="hamburger-menu-link">About</a></li>
+      <li class="hamburger-menu-element"><a href="#" class="hamburger-menu-link">Services</a></li>
+      <li class="hamburger-menu-element"><a href="#" class="hamburger-menu-link">Projects</a></li>
+      <li class="hamburger-menu-element"><a href="#" class="hamburger-menu-link menu-contact">Contact</a></li>
+    </ul>
+    <ul class="desktop-menu">
+      <li class="desktop-menu-element"><a href="#" class="desktop-menu-link">About</a></li>
+      <li class="desktop-menu-element"><a href="#" class="desktop-menu-link">Services</a></li>
+      <li class="desktop-menu-element"><a href="#" class="desktop-menu-link">Projects</a></li>
+      <li class="desktop-menu-element"><a href="#" class="desktop-menu-link desktop-menu-contact">Contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <div class="header-text">
+      <h1>We are creatives</h1>
+      <img src="./images/icon-arrow-down.svg" alt="arrow down icon" class="arrow-icon">
+    </div>
+  </header>
+  <main>
+    <section class="about-section">
+      <div class="about-section-image about-first-image">
+        <img src="./images/desktop/image-transform.jpg" alt="image of an egg">
+      </div>
+      <div class="about-section-texts">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <div class="about-link-container">
+            <a href="#" class="about-section-link first-about-link">Learn more</a>
+            <div class="about-link-decoration first-decoration"></div>
+          </div>
+      </div>
+    </section>
+    <section class="about-section">
+      <div class="about-section-image">
+        <img src="./images/desktop/image-stand-out.jpg" alt="image of a ping thing">
+      </div>
+      <div class="about-section-texts">
+        <h2>Stand out to the right audience</h2>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+        <div class="about-link-container">
+          <a href="#" class="about-section-link second-about-link">Learn more</a>
+          <div class="about-link-decoration second-decoration"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--
 
-  We are creatives
+  
 
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
+  
   Graphic design
   Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
 
@@ -58,11 +91,12 @@
   About
   Services
   Projects
-  Contact
+  Contact -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
+<script src="./app.js"></script>
 </html>
