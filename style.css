@@ -427,6 +427,7 @@ footer {
 
   .desktop-menu-element:last-child {
     margin: 0 0 0 1rem;
+    border-bottom: none;
   }
 
   .desktop-menu-element:last-child:hover {
