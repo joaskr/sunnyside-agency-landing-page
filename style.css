@@ -141,15 +141,24 @@ h1 {
   height: 100%;
 }
 
-.about-section-texts {
+.about-section-container {
   padding: 2rem 0;
-  width: 80%;
-  min-height: 50vh;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
+}
+
+.about-section-offer {
+  width: 100%;
+  min-height: 100vh;
+  justify-content: flex-end;
+}
+
+.about-section-texts {
+  width: 80%;
+  min-height: 50vh;
+  justify-content: space-evenly;
 }
 
 h2 {
@@ -160,9 +169,33 @@ h2 {
   margin-bottom: 1.25rem;
 }
 
-.about-section-texts p {
+h3 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  color: var(--dark-desat-blue);
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.graphic-design h3 {
+  color: var(--dark-desat-cyan);
+}
+
+.photography h3 {
+  color: var(--dark-blue);
+}
+
+.about-section-container p {
   margin-bottom: 1.25rem;
   color: var(--gray-blue);
+}
+
+.graphic-design p {
+  color: var(--dark-desat-cyan);
+}
+
+.photography p {
+  color: var(--dark-blue);
 }
 
 .about-section-link {
@@ -196,6 +229,24 @@ h2 {
 
 .second-decoration {
   background-color: hsla(7, 99%, 70%, 0.3);
+}
+
+.graphic-design {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photography {
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.offer-texts {
+  width: 80%;
 }
 
 @media screen and (min-width: 500px) {
@@ -271,15 +322,7 @@ h2 {
     margin-bottom: 3rem;
   }
 
-  .about-section {
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
   .about-section-image {
-    width: 50vw;
     height: 100%;
   }
 
@@ -289,19 +332,67 @@ h2 {
     height: 100%;
   }
 
-  .about-first-image {
-    order: 2;
-  }
-
   .about-section-texts {
     width: 50vw;
     height: 100%;
-    padding: 4rem;
     justify-content: center;
     text-align: left;
+    align-items: flex-start;
+    width: 60%;
+    margin: auto;
   }
 
   h2 {
     font-size: 2.3rem;
+  }
+
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "transform transform-image"
+      "standout-image standout"
+      "graphic-design photography";
+  }
+
+  .transform {
+    grid-area: transform;
+  }
+
+  .transform-image {
+    grid-area: transform-image;
+  }
+
+  .standout-image {
+    grid-area: standout-image;
+  }
+
+  .standout {
+    grid-area: standout;
+  }
+
+  .graphic-design {
+    grid-area: graphic-design;
+  }
+
+  .photography {
+    grid-area: photography;
+  }
+
+  .about-section-offer {
+    min-height: 100%;
+  }
+
+  .offer-texts {
+    min-width: 80%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .offer-texts {
+    width: 50%;
+    min-width: 50%;
   }
 }
