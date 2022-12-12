@@ -13,7 +13,11 @@
 </head>
 <body>
   <nav>
-    <img src="./images/logo.svg" alt="sunnyside logo" class="logo">
+    <a href="#" class="social-btn" aria-label="sunnyside link">
+      <img src="./images/logo.svg" alt="sunnyside logo" class="logo">
+      <span hidden>sunnyside page link</span>
+    </a>
+    
     <button aria-label="menu" class="menu-button"><img src="./images/icon-hamburger.svg" alt="hamburger menu icon" class="menu-icon"></button>
     <ul class="hamburger-menu">
       <li class="hamburger-menu-element"><a href="#" class="hamburger-menu-link">About</a></li>
@@ -35,7 +39,7 @@
     </div>
   </header>
   <main>
-    <div class="about-section">
+    <section class="about-section">
       <div class="transform-image about-section-image">
         <img src="./images/desktop/image-transform.jpg" alt="image of an egg">
       </div>
@@ -71,43 +75,69 @@
           <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
         </div>
       </div>
-    </div>
-      
+    </section>
+    <section class="testimonials-section">
+      <h4>Client testimonials</h4>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="./images/image-emily.jpg" alt="photo of Emily">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <strong>Emily R.</strong>
+          <small>Marketing Director</small>
+        </div>
+        <div class="testimonial">
+          <img src="./images/image-thomas.jpg" alt="photo of Thomas">
+          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <strong>Thomas S.</strong>
+          <small>Chief Operating Officer</small>
+        </div>
+        <div class="testimonial">
+          <img src="./images/image-jennie.jpg" alt="photo of Jennie">
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <strong>Jennie F.</strong>
+          <small>Business Owner</small>
+        </div>
+      </div>
+    </section>
+    <section class="images-section">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="image of milkbottles" class="milkbottle">
+      <img src="./images/desktop/image-gallery-orange.jpg" alt="image of an orange" class="orange">
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="image of a cone" class="cone">
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="image of sugarcubes" class="sugarcubes">
+    </section>
   </main>
-  <!--
-
-  
-
-  
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact -->
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  <footer>
+    <div class="footer-content">
+      <img src="./images/logo-green.svg" alt="sunnyside logo" class="logo">
+      <ul class="footer-menu">
+        <li class="footer-menu-element"><a href="#" class="footer-menu-link">About</a></li>
+        <li class="footer-menu-element"><a href="#" class="footer-menu-link">Services</a></li>
+        <li class="footer-menu-element"><a href="#" class="footer-menu-link">Projects</a></li>
+      </ul>
+      <div class="socials">
+        <a href="http://www.facebook.com" class="social-btn" aria-label="facebook link">
+          <img src="./images/icon-facebook.svg" alt="facebook logo" class="social-logo">
+          <span hidden>facebook link</span>
+        </a>
+        <a href="http://www.instagram.com" class="social-btn" aria-label="instagram link">
+          <img src="./images/icon-instagram.svg" alt="instagram logo" class="social-logo">
+          <span hidden>instagram link</span>
+        </a>
+        <a href="http://www.twitter.com" class="social-btn" aria-label="twitter link">
+          <img src="./images/icon-twitter.svg" alt="twitter logo" class="social-logo">
+          <span hidden>twitter link</span>
+        </a>
+        <a href="http://www.pinterest.com" class="social-btn" aria-label="pinterest link">
+          <img src="./images/icon-pinterest.svg" alt="pinterest logo" class="social-logo">
+          <span hidden>pinterest link</span>
+        </a>
+    </div>    
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/joaskr">Joanna Skrzypczak</a>.
+    </div>
+  </footer>
 </body>
 <script src="./app.js"></script>
 </html>
